@@ -1,6 +1,3 @@
-[submodule "build/external/SDL2"]
-	path = build/external/SDL2
-	url = https://github.com/libsdl-org/SDL.git
-[submodule "external/SDL2"]
-	path = external/SDL2
+[submodule "external/SDL"]
+	path = external/SDL
 	url = https://github.com/libsdl-org/SDL.git
