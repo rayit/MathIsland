@@ -1,0 +1,3 @@
+/home/rayit/Dev/MathIsland/build/CMakeFiles/project.dir
+/home/rayit/Dev/MathIsland/build/CMakeFiles/edit_cache.dir
+/home/rayit/Dev/MathIsland/build/CMakeFiles/rebuild_cache.dir
