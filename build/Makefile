@@ -130,108 +130,56 @@ project/fast:
 .PHONY : project/fast
 
 #=============================================================================
-# Target rules for targets named gl2dDemo
+# Target rules for targets named SDL3-shared
 
 # Build rule for target.
-gl2dDemo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gl2dDemo
-.PHONY : gl2dDemo
+SDL3-shared: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDL3-shared
+.PHONY : SDL3-shared
 
 # fast build rule for target.
-gl2dDemo/fast:
-	$(MAKE) $(MAKESILENT) -f external/gl2d/CMakeFiles/gl2dDemo.dir/build.make external/gl2d/CMakeFiles/gl2dDemo.dir/build
-.PHONY : gl2dDemo/fast
+SDL3-shared/fast:
+	$(MAKE) $(MAKESILENT) -f external/SDL2/CMakeFiles/SDL3-shared.dir/build.make external/SDL2/CMakeFiles/SDL3-shared.dir/build
+.PHONY : SDL3-shared/fast
 
 #=============================================================================
-# Target rules for targets named gl2dCustomShaderDemo
+# Target rules for targets named SDL3_test
 
 # Build rule for target.
-gl2dCustomShaderDemo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gl2dCustomShaderDemo
-.PHONY : gl2dCustomShaderDemo
+SDL3_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDL3_test
+.PHONY : SDL3_test
 
 # fast build rule for target.
-gl2dCustomShaderDemo/fast:
-	$(MAKE) $(MAKESILENT) -f external/gl2d/CMakeFiles/gl2dCustomShaderDemo.dir/build.make external/gl2d/CMakeFiles/gl2dCustomShaderDemo.dir/build
-.PHONY : gl2dCustomShaderDemo/fast
+SDL3_test/fast:
+	$(MAKE) $(MAKESILENT) -f external/SDL2/CMakeFiles/SDL3_test.dir/build.make external/SDL2/CMakeFiles/SDL3_test.dir/build
+.PHONY : SDL3_test/fast
 
 #=============================================================================
-# Target rules for targets named gl2dPostProcessDemo
+# Target rules for targets named SDL_uclibc
 
 # Build rule for target.
-gl2dPostProcessDemo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gl2dPostProcessDemo
-.PHONY : gl2dPostProcessDemo
+SDL_uclibc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDL_uclibc
+.PHONY : SDL_uclibc
 
 # fast build rule for target.
-gl2dPostProcessDemo/fast:
-	$(MAKE) $(MAKESILENT) -f external/gl2d/CMakeFiles/gl2dPostProcessDemo.dir/build.make external/gl2d/CMakeFiles/gl2dPostProcessDemo.dir/build
-.PHONY : gl2dPostProcessDemo/fast
+SDL_uclibc/fast:
+	$(MAKE) $(MAKESILENT) -f external/SDL2/CMakeFiles/SDL_uclibc.dir/build.make external/SDL2/CMakeFiles/SDL_uclibc.dir/build
+.PHONY : SDL_uclibc/fast
 
 #=============================================================================
-# Target rules for targets named glfw
+# Target rules for targets named uninstall
 
 # Build rule for target.
-glfw: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw
-.PHONY : glfw
+uninstall: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uninstall
+.PHONY : uninstall
 
 # fast build rule for target.
-glfw/fast:
-	$(MAKE) $(MAKESILENT) -f external/gl2d/thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/build.make external/gl2d/thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/build
-.PHONY : glfw/fast
-
-#=============================================================================
-# Target rules for targets named glad
-
-# Build rule for target.
-glad: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glad
-.PHONY : glad
-
-# fast build rule for target.
-glad/fast:
-	$(MAKE) $(MAKESILENT) -f external/gl2d/thirdparty/glad/CMakeFiles/glad.dir/build.make external/gl2d/thirdparty/glad/CMakeFiles/glad.dir/build
-.PHONY : glad/fast
-
-#=============================================================================
-# Target rules for targets named stb_image
-
-# Build rule for target.
-stb_image: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stb_image
-.PHONY : stb_image
-
-# fast build rule for target.
-stb_image/fast:
-	$(MAKE) $(MAKESILENT) -f external/gl2d/thirdparty/stb_image/CMakeFiles/stb_image.dir/build.make external/gl2d/thirdparty/stb_image/CMakeFiles/stb_image.dir/build
-.PHONY : stb_image/fast
-
-#=============================================================================
-# Target rules for targets named stb_truetype
-
-# Build rule for target.
-stb_truetype: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stb_truetype
-.PHONY : stb_truetype
-
-# fast build rule for target.
-stb_truetype/fast:
-	$(MAKE) $(MAKESILENT) -f external/gl2d/thirdparty/stb_truetype/CMakeFiles/stb_truetype.dir/build.make external/gl2d/thirdparty/stb_truetype/CMakeFiles/stb_truetype.dir/build
-.PHONY : stb_truetype/fast
-
-#=============================================================================
-# Target rules for targets named gl2d
-
-# Build rule for target.
-gl2d: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gl2d
-.PHONY : gl2d
-
-# fast build rule for target.
-gl2d/fast:
-	$(MAKE) $(MAKESILENT) -f external/gl2d/gl2d/CMakeFiles/gl2d.dir/build.make external/gl2d/gl2d/CMakeFiles/gl2d.dir/build
-.PHONY : gl2d/fast
+uninstall/fast:
+	$(MAKE) $(MAKESILENT) -f external/SDL2/CMakeFiles/uninstall.dir/build.make external/SDL2/CMakeFiles/uninstall.dir/build
+.PHONY : uninstall/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -289,15 +237,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... gl2d"
-	@echo "... gl2dCustomShaderDemo"
-	@echo "... gl2dDemo"
-	@echo "... gl2dPostProcessDemo"
-	@echo "... glad"
-	@echo "... glfw"
+	@echo "... uninstall"
+	@echo "... SDL3-shared"
+	@echo "... SDL3_test"
+	@echo "... SDL_uclibc"
 	@echo "... project"
-	@echo "... stb_image"
-	@echo "... stb_truetype"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

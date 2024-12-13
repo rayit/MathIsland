@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/rayit/Dev/MathIsland/include -I/home/rayit/Dev/MathIsland/external/gl2d/include -I/home/rayit/Dev/MathIsland/external/gl2d/gl2d/include -I/home/rayit/Dev/MathIsland/external/gl2d/thirdparty/glm/include -I/home/rayit/Dev/MathIsland/external/gl2d/thirdparty/glm -I/home/rayit/Dev/MathIsland/external/gl2d/thirdparty/glad/include -I/home/rayit/Dev/MathIsland/external/gl2d/thirdparty/stb_image/include -I/home/rayit/Dev/MathIsland/external/gl2d/thirdparty/stb_truetype/include
+CXX_INCLUDES = -I/home/rayit/Dev/MathIsland/include -isystem /usr/include/SDL2
 
 CXX_FLAGS = -std=gnu++17
 

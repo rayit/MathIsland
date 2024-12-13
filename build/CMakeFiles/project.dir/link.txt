@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/project.dir/main.cpp.o CMakeFiles/project.dir/src/greeting.cpp.o -o project  external/gl2d/gl2d/libgl2d.a external/gl2d/thirdparty/glad/libglad.a external/gl2d/thirdparty/stb_image/libstb_image.a external/gl2d/thirdparty/stb_truetype/libstb_truetype.a 
+/usr/bin/c++ CMakeFiles/project.dir/main.cpp.o CMakeFiles/project.dir/src/greeting.cpp.o -o project  /usr/lib/x86_64-linux-gnu/libSDL2.so 
