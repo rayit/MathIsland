@@ -529,3 +529,233 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "external/gl2d/thirdparty/glfw-3.3.2/CMakeLists.txt:58 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-R1qsri"
+      binary: "/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-R1qsri"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/rayit/Dev/MathIsland/external/gl2d/thirdparty/glfw-3.3.2/CMake/modules"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Release>:Release>"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-R1qsri'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_95150/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_95150.dir/build.make CMakeFiles/cmTC_95150.dir/build
+        gmake[1]: Entering directory '/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-R1qsri'
+        Building C object CMakeFiles/cmTC_95150.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_95150.dir/src.c.o -c /home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-R1qsri/src.c
+        Linking C executable cmTC_95150
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95150.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_95150.dir/src.c.o -o cmTC_95150 
+        gmake[1]: Leaving directory '/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-R1qsri'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindX11.cmake:682 (check_library_exists)"
+      - "external/gl2d/thirdparty/glfw-3.3.2/CMakeLists.txt:196 (find_package)"
+    checks:
+      - "Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so"
+    directories:
+      source: "/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-oytSH1"
+      binary: "/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-oytSH1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/rayit/Dev/MathIsland/external/gl2d/thirdparty/glfw-3.3.2/CMake/modules"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Release>:Release>"
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-oytSH1'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b603e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b603e.dir/build.make CMakeFiles/cmTC_b603e.dir/build
+        gmake[1]: Entering directory '/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-oytSH1'
+        Building C object CMakeFiles/cmTC_b603e.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_b603e.dir/CheckFunctionExists.c.o -c /home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-oytSH1/CheckFunctionExists.c
+        Linking C executable cmTC_b603e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b603e.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay -rdynamic CMakeFiles/cmTC_b603e.dir/CheckFunctionExists.c.o -o cmTC_b603e  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+        gmake[1]: Leaving directory '/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-oytSH1'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindX11.cmake:697 (check_function_exists)"
+      - "external/gl2d/thirdparty/glfw-3.3.2/CMakeLists.txt:196 (find_package)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-a7iIiI"
+      binary: "/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-a7iIiI"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/rayit/Dev/MathIsland/external/gl2d/thirdparty/glfw-3.3.2/CMake/modules"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Release>:Release>"
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-a7iIiI'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cc2f7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cc2f7.dir/build.make CMakeFiles/cmTC_cc2f7.dir/build
+        gmake[1]: Entering directory '/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-a7iIiI'
+        Building C object CMakeFiles/cmTC_cc2f7.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_cc2f7.dir/CheckFunctionExists.c.o -c /home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-a7iIiI/CheckFunctionExists.c
+        Linking C executable cmTC_cc2f7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc2f7.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname -rdynamic CMakeFiles/cmTC_cc2f7.dir/CheckFunctionExists.c.o -o cmTC_cc2f7 
+        gmake[1]: Leaving directory '/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-a7iIiI'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindX11.cmake:711 (check_function_exists)"
+      - "external/gl2d/thirdparty/glfw-3.3.2/CMakeLists.txt:196 (find_package)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-M3kmZa"
+      binary: "/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-M3kmZa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/rayit/Dev/MathIsland/external/gl2d/thirdparty/glfw-3.3.2/CMake/modules"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Release>:Release>"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-M3kmZa'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_365bc/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_365bc.dir/build.make CMakeFiles/cmTC_365bc.dir/build
+        gmake[1]: Entering directory '/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-M3kmZa'
+        Building C object CMakeFiles/cmTC_365bc.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_365bc.dir/CheckFunctionExists.c.o -c /home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-M3kmZa/CheckFunctionExists.c
+        Linking C executable cmTC_365bc
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_365bc.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect -rdynamic CMakeFiles/cmTC_365bc.dir/CheckFunctionExists.c.o -o cmTC_365bc 
+        gmake[1]: Leaving directory '/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-M3kmZa'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindX11.cmake:720 (check_function_exists)"
+      - "external/gl2d/thirdparty/glfw-3.3.2/CMakeLists.txt:196 (find_package)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-fRebsY"
+      binary: "/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-fRebsY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/rayit/Dev/MathIsland/external/gl2d/thirdparty/glfw-3.3.2/CMake/modules"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Release>:Release>"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-fRebsY'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f5619/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f5619.dir/build.make CMakeFiles/cmTC_f5619.dir/build
+        gmake[1]: Entering directory '/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-fRebsY'
+        Building C object CMakeFiles/cmTC_f5619.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_f5619.dir/CheckFunctionExists.c.o -c /home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-fRebsY/CheckFunctionExists.c
+        Linking C executable cmTC_f5619
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f5619.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove -rdynamic CMakeFiles/cmTC_f5619.dir/CheckFunctionExists.c.o -o cmTC_f5619 
+        gmake[1]: Leaving directory '/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-fRebsY'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindX11.cmake:729 (check_function_exists)"
+      - "external/gl2d/thirdparty/glfw-3.3.2/CMakeLists.txt:196 (find_package)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-41aFdK"
+      binary: "/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-41aFdK"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/rayit/Dev/MathIsland/external/gl2d/thirdparty/glfw-3.3.2/CMake/modules"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Release>:Release>"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-41aFdK'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_58600/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_58600.dir/build.make CMakeFiles/cmTC_58600.dir/build
+        gmake[1]: Entering directory '/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-41aFdK'
+        Building C object CMakeFiles/cmTC_58600.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_58600.dir/CheckFunctionExists.c.o -c /home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-41aFdK/CheckFunctionExists.c
+        Linking C executable cmTC_58600
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58600.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat -rdynamic CMakeFiles/cmTC_58600.dir/CheckFunctionExists.c.o -o cmTC_58600 
+        gmake[1]: Leaving directory '/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-41aFdK'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindX11.cmake:739 (check_library_exists)"
+      - "external/gl2d/thirdparty/glfw-3.3.2/CMakeLists.txt:196 (find_package)"
+    checks:
+      - "Looking for IceConnectionNumber in ICE"
+    directories:
+      source: "/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-ElsqKv"
+      binary: "/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-ElsqKv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/rayit/Dev/MathIsland/external/gl2d/thirdparty/glfw-3.3.2/CMake/modules"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Release>:Release>"
+    buildResult:
+      variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
+      cached: true
+      stdout: |
+        Change Dir: '/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-ElsqKv'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5c1cc/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5c1cc.dir/build.make CMakeFiles/cmTC_5c1cc.dir/build
+        gmake[1]: Entering directory '/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-ElsqKv'
+        Building C object CMakeFiles/cmTC_5c1cc.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_5c1cc.dir/CheckFunctionExists.c.o -c /home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-ElsqKv/CheckFunctionExists.c
+        Linking C executable cmTC_5c1cc
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c1cc.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -rdynamic CMakeFiles/cmTC_5c1cc.dir/CheckFunctionExists.c.o -o cmTC_5c1cc  -lICE 
+        gmake[1]: Leaving directory '/home/rayit/Dev/MathIsland/build/CMakeFiles/CMakeScratch/TryCompile-ElsqKv'
+        
+      exitCode: 0
+...

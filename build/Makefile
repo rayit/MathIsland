@@ -129,6 +129,110 @@ project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/build
 .PHONY : project/fast
 
+#=============================================================================
+# Target rules for targets named gl2dDemo
+
+# Build rule for target.
+gl2dDemo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gl2dDemo
+.PHONY : gl2dDemo
+
+# fast build rule for target.
+gl2dDemo/fast:
+	$(MAKE) $(MAKESILENT) -f external/gl2d/CMakeFiles/gl2dDemo.dir/build.make external/gl2d/CMakeFiles/gl2dDemo.dir/build
+.PHONY : gl2dDemo/fast
+
+#=============================================================================
+# Target rules for targets named gl2dCustomShaderDemo
+
+# Build rule for target.
+gl2dCustomShaderDemo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gl2dCustomShaderDemo
+.PHONY : gl2dCustomShaderDemo
+
+# fast build rule for target.
+gl2dCustomShaderDemo/fast:
+	$(MAKE) $(MAKESILENT) -f external/gl2d/CMakeFiles/gl2dCustomShaderDemo.dir/build.make external/gl2d/CMakeFiles/gl2dCustomShaderDemo.dir/build
+.PHONY : gl2dCustomShaderDemo/fast
+
+#=============================================================================
+# Target rules for targets named gl2dPostProcessDemo
+
+# Build rule for target.
+gl2dPostProcessDemo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gl2dPostProcessDemo
+.PHONY : gl2dPostProcessDemo
+
+# fast build rule for target.
+gl2dPostProcessDemo/fast:
+	$(MAKE) $(MAKESILENT) -f external/gl2d/CMakeFiles/gl2dPostProcessDemo.dir/build.make external/gl2d/CMakeFiles/gl2dPostProcessDemo.dir/build
+.PHONY : gl2dPostProcessDemo/fast
+
+#=============================================================================
+# Target rules for targets named glfw
+
+# Build rule for target.
+glfw: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw
+.PHONY : glfw
+
+# fast build rule for target.
+glfw/fast:
+	$(MAKE) $(MAKESILENT) -f external/gl2d/thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/build.make external/gl2d/thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/build
+.PHONY : glfw/fast
+
+#=============================================================================
+# Target rules for targets named glad
+
+# Build rule for target.
+glad: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glad
+.PHONY : glad
+
+# fast build rule for target.
+glad/fast:
+	$(MAKE) $(MAKESILENT) -f external/gl2d/thirdparty/glad/CMakeFiles/glad.dir/build.make external/gl2d/thirdparty/glad/CMakeFiles/glad.dir/build
+.PHONY : glad/fast
+
+#=============================================================================
+# Target rules for targets named stb_image
+
+# Build rule for target.
+stb_image: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stb_image
+.PHONY : stb_image
+
+# fast build rule for target.
+stb_image/fast:
+	$(MAKE) $(MAKESILENT) -f external/gl2d/thirdparty/stb_image/CMakeFiles/stb_image.dir/build.make external/gl2d/thirdparty/stb_image/CMakeFiles/stb_image.dir/build
+.PHONY : stb_image/fast
+
+#=============================================================================
+# Target rules for targets named stb_truetype
+
+# Build rule for target.
+stb_truetype: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stb_truetype
+.PHONY : stb_truetype
+
+# fast build rule for target.
+stb_truetype/fast:
+	$(MAKE) $(MAKESILENT) -f external/gl2d/thirdparty/stb_truetype/CMakeFiles/stb_truetype.dir/build.make external/gl2d/thirdparty/stb_truetype/CMakeFiles/stb_truetype.dir/build
+.PHONY : stb_truetype/fast
+
+#=============================================================================
+# Target rules for targets named gl2d
+
+# Build rule for target.
+gl2d: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gl2d
+.PHONY : gl2d
+
+# fast build rule for target.
+gl2d/fast:
+	$(MAKE) $(MAKESILENT) -f external/gl2d/gl2d/CMakeFiles/gl2d.dir/build.make external/gl2d/gl2d/CMakeFiles/gl2d.dir/build
+.PHONY : gl2d/fast
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -185,7 +289,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... gl2d"
+	@echo "... gl2dCustomShaderDemo"
+	@echo "... gl2dDemo"
+	@echo "... gl2dPostProcessDemo"
+	@echo "... glad"
+	@echo "... glfw"
 	@echo "... project"
+	@echo "... stb_image"
+	@echo "... stb_truetype"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -108,6 +108,10 @@ project_EXTERNAL_OBJECTS =
 project: CMakeFiles/project.dir/main.cpp.o
 project: CMakeFiles/project.dir/src/greeting.cpp.o
 project: CMakeFiles/project.dir/build.make
+project: external/gl2d/gl2d/libgl2d.a
+project: external/gl2d/thirdparty/glad/libglad.a
+project: external/gl2d/thirdparty/stb_image/libstb_image.a
+project: external/gl2d/thirdparty/stb_truetype/libstb_truetype.a
 project: CMakeFiles/project.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/rayit/Dev/MathIsland/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project.dir/link.txt --verbose=$(VERBOSE)
